@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uwahost", "uwahost\uwahost.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clixel", "clixel\clixel.vcxproj", "{2EB6AEF7-2ABC-4F39-823F-67249FCC07AC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "game\game.vcxproj", "{12371BBC-EEF9-4703-ACF8-2B88BC98462A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -47,6 +49,18 @@ Global
 		{2EB6AEF7-2ABC-4F39-823F-67249FCC07AC}.Release|x64.Build.0 = Release|x64
 		{2EB6AEF7-2ABC-4F39-823F-67249FCC07AC}.Release|x86.ActiveCfg = Release|Win32
 		{2EB6AEF7-2ABC-4F39-823F-67249FCC07AC}.Release|x86.Build.0 = Release|Win32
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|ARM.Build.0 = Debug|ARM
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|x64.ActiveCfg = Debug|x64
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|x64.Build.0 = Debug|x64
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|x86.ActiveCfg = Debug|Win32
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Debug|x86.Build.0 = Debug|Win32
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|ARM.ActiveCfg = Release|ARM
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|ARM.Build.0 = Release|ARM
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|x64.ActiveCfg = Release|x64
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|x64.Build.0 = Release|x64
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|x86.ActiveCfg = Release|Win32
+		{12371BBC-EEF9-4703-ACF8-2B88BC98462A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

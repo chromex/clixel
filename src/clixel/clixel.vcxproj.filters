@@ -5,5 +5,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{6f9fd9a9-6873-4225-a59d-eb91cbe56873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native">
+      <UniqueIdentifier>{d3182459-5bfd-4dcb-91d0-df7bf2b9c297}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clixel.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ClxNativeAbstraction.cpp">
+      <Filter>native</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxU.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxState.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxGroup.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxG.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxBasic.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxGame.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clixel.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ClxGame.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxNativeAbstraction.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxU.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxState.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxGroup.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxBasic.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxG.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Clx.h">
+      <Filter>engine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

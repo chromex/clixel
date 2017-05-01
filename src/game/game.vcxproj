@@ -27,9 +27,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2eb6aef7-2abc-4f39-823f-67249fcc07ac}</ProjectGuid>
+    <ProjectGuid>{12371bbc-eef9-4703-acf8-2b88bc98462a}</ProjectGuid>
     <Keyword>StaticLibrary</Keyword>
-    <RootNamespace>clixel</RootNamespace>
+    <RootNamespace>game</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
@@ -188,27 +188,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="clixel.h" />
-    <ClInclude Include="Clx.h" />
-    <ClInclude Include="ClxBasic.h" />
-    <ClInclude Include="ClxG.h" />
-    <ClInclude Include="ClxGame.h" />
-    <ClInclude Include="ClxGroup.h" />
-    <ClInclude Include="ClxNativeAbstraction.h" />
-    <ClInclude Include="ClxState.h" />
-    <ClInclude Include="ClxU.h" />
+    <ClInclude Include="game.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clixel.cpp" />
-    <ClCompile Include="ClxBasic.cpp" />
-    <ClCompile Include="ClxG.cpp" />
-    <ClCompile Include="ClxGame.cpp" />
-    <ClCompile Include="ClxGroup.cpp" />
-    <ClCompile Include="ClxNativeAbstraction.cpp" />
-    <ClCompile Include="ClxState.cpp" />
-    <ClCompile Include="ClxU.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -217,6 +202,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bullet.spt" />
+    <None Include="Sprite.spt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

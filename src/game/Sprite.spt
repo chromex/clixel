@@ -1,0 +1,24 @@
+func CreateSprite(obj) {
+    obj._Sprite = __CreateSprite(obj);
+    obj.LoadGraphic = Sprite_LoadGraphic;
+    obj.SetSize = Sprite_SetSize;
+    obj.SetOffset = Sprite_SetOffset;
+    obj.AddAnimation = Sprite_AddAnimation;
+    // IsAlive, IsFinished, IsTouching, SetVelocity, IsOnScreen, SetAlive, SetSolid, Play, GetLocation, GetSize, Reset
+}
+
+func Sprite_LoadGraphic(this, path, animated) {
+    __Sprite_LoadGraphic(this._Sprite, path, animated);
+}
+
+func Sprite_SetSize(this, width, height) {
+    __Sprite_SetSize(this._Sprite, width, height);
+}
+
+func Sprite_SetOffset(this, x, y) {
+    __Sprite_SetOffset(this._Sprite, x, y);
+}
+
+func Sprite_AddAnimation(this, name, frames, frameRate, looped) {
+    __Sprite_AddAnimation(this._Sprite, name, frames, frameRate, looped);
+}

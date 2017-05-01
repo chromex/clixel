@@ -1,0 +1,74 @@
+func CreateBullet() {
+    obj = 
+        {
+            "Update": Bullet_Update, 
+            "Kill": Bullet_Kill,
+            "Shoot": Bullet_Shoot,
+            "Speed": 360.0,
+            "UP": 0,
+            "DOWN": 1,
+            "LEFT": 2,
+            "RIGHT": 3,
+        };
+
+    CreateSprite(obj);
+    obj:LoadGraphic("bullet.png", true);
+    obj:SetSize(6, 6);
+    obj:SetOffset(1, 1);
+    obj:AddAnimation("up", [0]);
+    obj:AddAnimation("down", [1]);
+    obj:AddAnimation("left", [2]);
+    obj:AddAnimation("right", [3]);
+    obj:AddAnimation("poof", [4, 5, 6, 7], 50, false);
+}
+
+func Bullet_Update(this) {
+    if (!this:IsAlive())
+    {
+        if (this:IsFinished())
+        {
+            this:SetExists(false);
+        }
+    }
+    else if (this:IsTouching())
+    {
+        this:Kill();
+    }
+}
+
+func Bullet_Kill(this) {
+    if (!this:IsAlive()) return;
+
+    this:SetVelocity(0, 0);
+    this:SetAlive(false);
+    this:SetSolid(false);
+    this:Play("poof");
+
+    if (this:IsOnScreen())
+    {
+        PlaySound("sndhit.mp3");
+    }
+}
+
+// location:FlxPoint
+func Bullet_Shoot(this, location, aim) {
+    PlaySound("shoot.mp3");
+    size = this:GetSize();
+    this:Reset(location.x - size.x / 2, location.y - size.y / 2);
+    this:SetSolid(true);
+    if (aim == this.UP) {
+        this:Play("up");
+        this:SetVelocity(0, -this.Speed);
+    } elif (aim == this.DOWN) {
+        this:Play("down");
+        this:SetVelocity(0, this.Speed);
+    } elif (aim == this.LEFT) {
+        this:Play("left");
+        this:SetVelocity(-this.Speed, 0);
+    } elif (aim == this.RIGHT) {
+        this:Play("right");
+        this:SetVelocity(this.Speed, 0);
+    } else  {
+        print("Bullet_Shoot: Invalid aim: " + aim);
+    }
+}

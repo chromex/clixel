@@ -7,3 +7,11 @@
 #endif
 
 #include <windows.h>
+#include <cstdint>
+#include <functional>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <string>
+#include <memory>
