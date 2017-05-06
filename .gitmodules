@@ -1,0 +1,3 @@
+[submodule "extern/scrpt"]
+	path = extern/scrpt
+	url = https://github.com/chromex/scrpt
