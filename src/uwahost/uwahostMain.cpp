@@ -15,7 +15,7 @@ uwahostMain::uwahostMain(const std::shared_ptr<DX::DeviceResources>& deviceResou
 	// Register to be notified if the Device is lost or recreated
 	m_deviceResources->RegisterDeviceNotify(this);
 
-	// TODO: Replace this with your app's content initialization.
+    m_clixelGame = std::unique_ptr<ClixelGame>(new ClixelGame(m_deviceResources));
 	m_sceneRenderer = std::unique_ptr<Sample3DSceneRenderer>(new Sample3DSceneRenderer(m_deviceResources));
 
 	m_fpsTextRenderer = std::unique_ptr<SampleFpsTextRenderer>(new SampleFpsTextRenderer(m_deviceResources));
@@ -37,7 +37,7 @@ uwahostMain::~uwahostMain()
 // Updates application state when the window size changes (e.g. device orientation change)
 void uwahostMain::CreateWindowSizeDependentResources() 
 {
-	// TODO: Replace this with the size-dependent initialization of your app's content.
+    m_clixelGame->CreateWindowSizeDependentResources();
 	m_sceneRenderer->CreateWindowSizeDependentResources();
 }
 
@@ -47,7 +47,7 @@ void uwahostMain::Update()
 	// Update scene objects.
 	m_timer.Tick([&]()
 	{
-		// TODO: Replace this with your app's content update functions.
+        m_clixelGame->Update(m_timer);
 		m_sceneRenderer->Update(m_timer);
 		m_fpsTextRenderer->Update(m_timer);
 	});
@@ -78,7 +78,7 @@ bool uwahostMain::Render()
 	context->ClearDepthStencilView(m_deviceResources->GetDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
 	// Render the scene objects.
-	// TODO: Replace this with your app's content rendering functions.
+    m_clixelGame->Render();
 	m_sceneRenderer->Render();
 	m_fpsTextRenderer->Render();
 
@@ -88,6 +88,7 @@ bool uwahostMain::Render()
 // Notifies renderers that device resources need to be released.
 void uwahostMain::OnDeviceLost()
 {
+    m_clixelGame->ReleaseDeviceDependentResources();
 	m_sceneRenderer->ReleaseDeviceDependentResources();
 	m_fpsTextRenderer->ReleaseDeviceDependentResources();
 }
@@ -95,6 +96,7 @@ void uwahostMain::OnDeviceLost()
 // Notifies renderers that device resources may now be recreated.
 void uwahostMain::OnDeviceRestored()
 {
+    m_clixelGame->CreateDeviceDependentResources();
 	m_sceneRenderer->CreateDeviceDependentResources();
 	m_fpsTextRenderer->CreateDeviceDependentResources();
 	CreateWindowSizeDependentResources();

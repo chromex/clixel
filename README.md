@@ -26,3 +26,11 @@ Startup:
 * Game inherits from ClxGame and specifies the initial state
 * Game starts loading everything while uwahost displays a static loading screen
 * Once done, uwahost starts invoking Game's update and render calls which in turn invokes the current state's update and render calls which are implemented in scrpt
+
+
+
+## Today
+
+* Create game and state, have input checks
+* Asset bundling for game (including scripts)
+* Scrpt "state" object with input checks

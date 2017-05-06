@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="Content\ClixelGame.h" />
     <ClInclude Include="Common\DeviceResources.h" />
     <ClInclude Include="uwahostMain.h" />
     <ClInclude Include="Common\DirectXHelper.h" />
@@ -209,6 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="Content\ClixelGame.cpp" />
     <ClCompile Include="Common\DeviceResources.cpp" />
     <ClCompile Include="uwahostMain.cpp" />
     <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
