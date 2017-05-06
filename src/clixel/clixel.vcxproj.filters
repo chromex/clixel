@@ -36,6 +36,12 @@
     <ClCompile Include="ClxGame.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="ClxObject.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClxSprite.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clixel.h" />
@@ -63,6 +69,12 @@
       <Filter>engine</Filter>
     </ClInclude>
     <ClInclude Include="Clx.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxObject.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ClxSprite.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>

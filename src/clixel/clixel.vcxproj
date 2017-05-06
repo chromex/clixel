@@ -195,6 +195,8 @@
     <ClInclude Include="ClxGame.h" />
     <ClInclude Include="ClxGroup.h" />
     <ClInclude Include="ClxNativeAbstraction.h" />
+    <ClInclude Include="ClxObject.h" />
+    <ClInclude Include="ClxSprite.h" />
     <ClInclude Include="ClxState.h" />
     <ClInclude Include="ClxU.h" />
     <ClInclude Include="pch.h" />
@@ -207,6 +209,8 @@
     <ClCompile Include="ClxGame.cpp" />
     <ClCompile Include="ClxGroup.cpp" />
     <ClCompile Include="ClxNativeAbstraction.cpp" />
+    <ClCompile Include="ClxObject.cpp" />
+    <ClCompile Include="ClxSprite.cpp" />
     <ClCompile Include="ClxState.cpp" />
     <ClCompile Include="ClxU.cpp" />
     <ClCompile Include="pch.cpp">
