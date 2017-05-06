@@ -13,7 +13,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clixel.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="ClxNativeAbstraction.cpp">
       <Filter>native</Filter>
@@ -44,37 +43,36 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="clixel.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="ClxGame.h">
-      <Filter>engine</Filter>
-    </ClInclude>
-    <ClInclude Include="ClxNativeAbstraction.h">
+    <ClInclude Include="inc/clixel/ClxNativeAbstraction.h">
       <Filter>native</Filter>
     </ClInclude>
-    <ClInclude Include="ClxU.h">
+    <ClInclude Include="inc/clixel/Clx.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxState.h">
+    <ClInclude Include="inc/clixel/ClxBasic.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxGroup.h">
+    <ClInclude Include="inc/clixel/ClxG.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxBasic.h">
+    <ClInclude Include="inc/clixel/ClxGame.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxG.h">
+    <ClInclude Include="inc/clixel/ClxGroup.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="Clx.h">
+    <ClInclude Include="inc/clixel/ClxObject.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxObject.h">
+    <ClInclude Include="inc/clixel/ClxSprite.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="ClxSprite.h">
+    <ClInclude Include="inc/clixel/ClxState.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc/clixel/ClxU.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>

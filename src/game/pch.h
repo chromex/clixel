@@ -7,3 +7,4 @@
 #endif
 
 #include <windows.h>
+#include "clixel/Clx.h"

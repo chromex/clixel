@@ -1,5 +1,9 @@
 #pragma once
 
+#include <functional>
+#include <vector>
+#include <memory>
+
 #include "ClxNativeAbstraction.h"
 #include "ClxBasic.h"
 #include "ClxObject.h"

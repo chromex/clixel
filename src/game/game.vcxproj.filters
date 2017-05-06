@@ -12,11 +12,13 @@
   <ItemGroup>
     <ClCompile Include="game.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="TestState.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="inc/game/game.h" />
+    <ClInclude Include="inc/game/TestState.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Sprite.spt">

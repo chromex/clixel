@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "Clx.h"
+#include "clixel/Clx.h"
 
 ClxGroup::ClxGroup(size_t maxSize)
     : _maxSize(maxSize)

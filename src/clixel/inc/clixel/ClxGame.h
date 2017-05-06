@@ -5,11 +5,21 @@ class ClxGame
 public:
     typedef std::function<ClxState*()> CreateStateFunc;
 
-    ClxGame(ClxNativeAbstraction* abstraction, CreateStateFunc initialState, uint32_t zoom);
+    ClxGame(CreateStateFunc initialState, uint32_t zoom);
     virtual ~ClxGame();
 
+    void Step();
+
+    void Draw();
+
+    void RequestState(CreateStateFunc state);
+
 private:
-    ClxNativeAbstraction* _abstraction;
+    void Update();
+
+    void SwitchState();
+
+private:
     CreateStateFunc _iState;
     std::unique_ptr<ClxState> _requestedState;
     std::unique_ptr<ClxState> _state;
@@ -20,12 +30,4 @@ private:
     // OnMouseDown
     // OnMouseUp
     // OnMouseWheel
-
-    void Step();
-
-    void Draw();
-
-    void SwitchState();
-
-    void Update();
 };

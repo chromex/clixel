@@ -1,7 +1,6 @@
 ﻿#include "pch.h"
 #include "uwahostMain.h"
 #include "Common\DirectXHelper.h"
-#include "clixel.h"
 
 using namespace uwahost;
 using namespace Windows::Foundation;
@@ -15,7 +14,7 @@ uwahostMain::uwahostMain(const std::shared_ptr<DX::DeviceResources>& deviceResou
 	// Register to be notified if the Device is lost or recreated
 	m_deviceResources->RegisterDeviceNotify(this);
 
-    m_clixelGame = std::unique_ptr<ClixelGame>(new ClixelGame(m_deviceResources));
+    m_clixelGame = std::unique_ptr<GameHost>(new GameHost(m_deviceResources));
 	m_sceneRenderer = std::unique_ptr<Sample3DSceneRenderer>(new Sample3DSceneRenderer(m_deviceResources));
 
 	m_fpsTextRenderer = std::unique_ptr<SampleFpsTextRenderer>(new SampleFpsTextRenderer(m_deviceResources));

@@ -1,6 +1,6 @@
 #pragma once
 
-class ClxState : ClxGroup
+class ClxState : public ClxGroup
 {
 public:
     // Called after the game successfully switches to the state. Override this function, not the constructor,

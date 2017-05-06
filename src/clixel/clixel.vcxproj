@@ -120,6 +120,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,6 +133,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +146,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,6 +159,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,6 +172,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -180,6 +185,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -188,22 +194,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="clixel.h" />
-    <ClInclude Include="Clx.h" />
-    <ClInclude Include="ClxBasic.h" />
-    <ClInclude Include="ClxG.h" />
-    <ClInclude Include="ClxGame.h" />
-    <ClInclude Include="ClxGroup.h" />
-    <ClInclude Include="ClxNativeAbstraction.h" />
-    <ClInclude Include="ClxObject.h" />
-    <ClInclude Include="ClxSprite.h" />
-    <ClInclude Include="ClxState.h" />
-    <ClInclude Include="ClxU.h" />
+    <ClInclude Include="inc/clixel/Clx.h" />
+    <ClInclude Include="inc/clixel/ClxBasic.h" />
+    <ClInclude Include="inc/clixel/ClxG.h" />
+    <ClInclude Include="inc/clixel/ClxGame.h" />
+    <ClInclude Include="inc/clixel/ClxGroup.h" />
+    <ClInclude Include="inc/clixel/ClxNativeAbstraction.h" />
+    <ClInclude Include="inc/clixel/ClxObject.h" />
+    <ClInclude Include="inc/clixel/ClxSprite.h" />
+    <ClInclude Include="inc/clixel/ClxState.h" />
+    <ClInclude Include="inc/clixel/ClxU.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clixel.cpp" />
     <ClCompile Include="ClxBasic.cpp" />
     <ClCompile Include="ClxG.cpp" />
     <ClCompile Include="ClxGame.cpp" />

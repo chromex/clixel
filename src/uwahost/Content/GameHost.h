@@ -2,13 +2,14 @@
 
 #include "..\Common\DeviceResources.h"
 #include "..\Common\StepTimer.h"
+#include "game\game.h"
 
 namespace uwahost
 {
-    class ClixelGame
+    class GameHost
     {
     public:
-        ClixelGame(const std::shared_ptr<DX::DeviceResources>& deviceResources);
+        GameHost(const std::shared_ptr<DX::DeviceResources>& deviceResources);
         void CreateDeviceDependentResources();
         void CreateWindowSizeDependentResources();
         void ReleaseDeviceDependentResources();
@@ -19,5 +20,6 @@ namespace uwahost
         // Cached pointer to device resources.
         std::shared_ptr<DX::DeviceResources> _deviceResources;
         bool _loadingComplete;
+        Game _game;
     };
 }

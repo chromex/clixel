@@ -4,7 +4,7 @@
 #include "Common\DeviceResources.h"
 #include "Content\Sample3DSceneRenderer.h"
 #include "Content\SampleFpsTextRenderer.h"
-#include "Content\ClixelGame.h"
+#include "Content\GameHost.h"
 
 // Renders Direct2D and 3D content on the screen.
 namespace uwahost
@@ -29,7 +29,7 @@ namespace uwahost
 		// TODO: Replace with your own content renderers.
 		std::unique_ptr<Sample3DSceneRenderer> m_sceneRenderer;
 		std::unique_ptr<SampleFpsTextRenderer> m_fpsTextRenderer;
-        std::unique_ptr<ClixelGame> m_clixelGame;
+        std::unique_ptr<GameHost> m_clixelGame;
 
 		// Rendering loop timer.
 		DX::StepTimer m_timer;

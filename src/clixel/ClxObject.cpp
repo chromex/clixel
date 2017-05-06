@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "Clx.h"
+#include "clixel/Clx.h"
 
 ClxObject::ClxObject(float x, float y, float width, float height)
     : _x(x)

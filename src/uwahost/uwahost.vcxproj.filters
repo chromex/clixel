@@ -67,7 +67,7 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="uwahostMain.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Content\ClixelGame.cpp">
+    <ClCompile Include="Content\GameHost.cpp">
       <Filter>Content</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,7 +75,7 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="uwahostMain.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Content\ClixelGame.h">
+    <ClInclude Include="Content\GameHost.h">
       <Filter>Content</Filter>
     </ClInclude>
   </ItemGroup>
