@@ -13,5 +13,7 @@
 #include <memory>
 #include <agile.h>
 #include <concrt.h>
+#include <unordered_map>
+#include <bitset>
 
 #include "clixel\Clx.h"

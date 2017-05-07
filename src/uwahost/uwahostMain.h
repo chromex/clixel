@@ -17,6 +17,8 @@ namespace uwahost
 		void CreateWindowSizeDependentResources();
 		void Update();
 		bool Render();
+        void OnKeyDown(Windows::System::VirtualKey key);
+        void OnKeyUp(Windows::System::VirtualKey key);
 
 		// IDeviceNotify
 		virtual void OnDeviceLost();
@@ -29,7 +31,7 @@ namespace uwahost
 		// TODO: Replace with your own content renderers.
 		std::unique_ptr<Sample3DSceneRenderer> m_sceneRenderer;
 		std::unique_ptr<SampleFpsTextRenderer> m_fpsTextRenderer;
-        std::unique_ptr<GameHost> m_clixelGame;
+        std::unique_ptr<GameHost> m_gameHost;
 
 		// Rendering loop timer.
 		DX::StepTimer m_timer;
