@@ -9,24 +9,24 @@ ClxObject::ClxObject(float x, float y, float width, float height)
 {
 }
 
-float ClxObject::GetX() const
+float ClxObject::x() const
 {
     return _x;
 }
 
-void ClxObject::SetX(float x)
+float& ClxObject::x()
 {
-    _x = x;
+    return _x;
 }
 
-float ClxObject::GetY() const
+float ClxObject::y() const
 {
     return _y;
 }
 
-void ClxObject::SetY(float y)
+float& ClxObject::y()
 {
-    _y = y;
+    return _y;
 }
 
 void ClxObject::GetPosition(float* x, float* y) const
@@ -39,4 +39,21 @@ void ClxObject::SetPosition(float x, float y)
 {
     _x = x;
     _y = y;
+}
+
+float ClxObject::health() const
+{
+    return _health;
+}
+
+float & ClxObject::health()
+{
+    return _health;
+}
+
+void ClxObject::Hurt(float damage)
+{
+    _health -= damage;
+    if (_health <= 0)
+        this->Kill();
 }

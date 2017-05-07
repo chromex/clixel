@@ -205,6 +205,7 @@
     <ClInclude Include="inc/clixel/ClxSprite.h" />
     <ClInclude Include="inc/clixel/ClxState.h" />
     <ClInclude Include="inc/clixel/ClxU.h" />
+    <ClInclude Include="inc\clixel\ClxPoint.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -215,6 +216,7 @@
     <ClCompile Include="ClxGroup.cpp" />
     <ClCompile Include="ClxNativeAbstraction.cpp" />
     <ClCompile Include="ClxObject.cpp" />
+    <ClCompile Include="ClxPoint.cpp" />
     <ClCompile Include="ClxSprite.cpp" />
     <ClCompile Include="ClxState.cpp" />
     <ClCompile Include="ClxU.cpp" />

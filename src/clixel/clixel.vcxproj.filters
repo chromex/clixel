@@ -41,6 +41,9 @@
     <ClCompile Include="ClxSprite.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="ClxPoint.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -77,6 +80,9 @@
     </ClInclude>
     <ClInclude Include="inc/clixel/ClxNativeKeyboard.h">
       <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\clixel\ClxPoint.h">
+      <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
