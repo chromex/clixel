@@ -75,5 +75,8 @@
     <ClInclude Include="inc/clixel/ClxU.h">
       <Filter>engine</Filter>
     </ClInclude>
+    <ClInclude Include="inc/clixel/ClxNativeKeyboard.h">
+      <Filter>native</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -194,6 +194,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="inc/clixel/ClxNativeKeyboard.h" />
     <ClInclude Include="inc/clixel/Clx.h" />
     <ClInclude Include="inc/clixel/ClxBasic.h" />
     <ClInclude Include="inc/clixel/ClxG.h" />

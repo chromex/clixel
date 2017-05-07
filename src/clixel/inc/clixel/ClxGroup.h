@@ -3,7 +3,7 @@
 class ClxGroup : ClxBasic
 {
 public:
-    ClxGroup(size_t maxSize);
+    ClxGroup(size_t maxSize = 0);
 
     /// Overrides
 

@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "GameHost.h"
+#include "NativeAbstraction.h"
 
 #include "..\Common\DirectXHelper.h"
 
@@ -14,6 +15,7 @@ GameHost::GameHost(const std::shared_ptr<DX::DeviceResources>& deviceResources)
 {
     this->CreateDeviceDependentResources();
     this->CreateWindowSizeDependentResources();
+    ClxG()->Init(std::shared_ptr<ClxNativeAbstraction>(new NativeAbstraction()));
 }
 
 void GameHost::CreateDeviceDependentResources()

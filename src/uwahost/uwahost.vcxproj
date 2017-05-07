@@ -200,6 +200,7 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="Content\GameHost.h" />
     <ClInclude Include="Common\DeviceResources.h" />
+    <ClInclude Include="NativeAbstraction.h" />
     <ClInclude Include="uwahostMain.h" />
     <ClInclude Include="Common\DirectXHelper.h" />
     <ClInclude Include="Common\StepTimer.h" />
@@ -212,6 +213,7 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Content\GameHost.cpp" />
     <ClCompile Include="Common\DeviceResources.cpp" />
+    <ClCompile Include="NativeAbstraction.cpp" />
     <ClCompile Include="uwahostMain.cpp" />
     <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
     <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />

@@ -3,12 +3,14 @@
 class ClxGlobal
 {
 public:
-    void Init(ClxNativeAbstraction* native);
+    void Init(std::shared_ptr<ClxNativeAbstraction> native);
     void SetGame(ClxGame* game);
+
+    ClxNativeKeyboard* Keys();
 
 private:
     std::unique_ptr<ClxGame> _game;
-    std::unique_ptr<ClxNativeAbstraction> _native;
+    std::shared_ptr<ClxNativeAbstraction> _native;
 };
 
 ClxGlobal* ClxG();

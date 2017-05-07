@@ -70,12 +70,18 @@
     <ClCompile Include="Content\GameHost.cpp">
       <Filter>Content</Filter>
     </ClCompile>
+    <ClCompile Include="NativeAbstraction.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="uwahostMain.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Content\GameHost.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeAbstraction.h">
       <Filter>Content</Filter>
     </ClInclude>
   </ItemGroup>
